@@ -1,0 +1,7 @@
+[user]
+  name = Soomin Jeong
+  email = sjeongus@gmail.com
+[core]
+  editor = vim
+[branch]
+  autosetuprebase = always
