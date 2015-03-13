@@ -34,8 +34,12 @@ filetype plugin indent on    " required
 
 map <C-n> :NERDTreeToggle<CR>
 
+colorscheme Benokai
+" Workaround for PuTTY color scheme
+
 " Tabs and whitespace
 set shiftwidth=2
+set tabstop=2
 set softtabstop=2
 set expandtab
 set smarttab
@@ -45,9 +49,11 @@ set copyindent
 set preserveindent
 autocmd BufWritePre * :%s/\s\+$//e
 
-" Case insensitive search
+" Search
 set smartcase
 set ignorecase
+set incsearch
+set hlsearch
 
 " UI settings
 set background=dark
@@ -55,12 +61,13 @@ syntax on
 set nostartofline
 set mouse=a
 set laststatus=2
+hi Normal ctermbg=NONE
 
-"Line numbering
+" Line numbering
 set number relativenumber
 autocmd InsertEnter * :set number norelativenumber
 autocmd InsertLeave * :set number relativenumber
-
+highlight LineNr ctermfg=grey ctermbg=NONE
 " etc
 set noswapfile
 set nobackup
