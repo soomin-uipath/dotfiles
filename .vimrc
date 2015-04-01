@@ -65,10 +65,10 @@ set laststatus=2
 hi Normal ctermbg=NONE
 
 " Line numbering
-highlight LineNr ctermfg=grey ctermbg=NONE
 set number relativenumber
 autocmd InsertEnter * :set number norelativenumber
 autocmd InsertLeave * :set number relativenumber
+highlight LineNr ctermfg=grey ctermbg=NONE
 
 " etc
 set noswapfile
