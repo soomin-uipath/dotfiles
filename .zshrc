@@ -83,7 +83,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias kanade="ssh root@104.236.144.229"
+alias kanade="ssh root@45.55.13.11"
+alias kanademux="ssh root@45.55.13.11 -t -- /bin/sh -c 'tmux has-session && exec tmux attach || exec tmux'"
 alias rempv="brew rm mpv && brew install --HEAD --with-bundle --with-bluray-support --with-libdvdread --with-little-cms2 --with-lua --with-bundle mpv"
 
 export ANDROID_HOME=/Users/sjeongus/Library/Android/sdk
