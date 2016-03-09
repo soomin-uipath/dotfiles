@@ -127,3 +127,4 @@ set statusline+=%*
 " =========== Airline settings ============
 set laststatus=2
 set noshowmode
+set notitle
