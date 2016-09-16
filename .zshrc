@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/sjeongus/.oh-my-zsh
+export ZSH=/Users/sjeong/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -53,8 +53,11 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:/Users/sjeongus/Library/Android/sdk/platform-tools:/Users/sjeongus/Library/Android/sdk/tools"
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:"
 # export MANPATH="/usr/local/man:$MANPATH"
+export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages
+
+eval "$(docker-machine env default)"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -83,9 +86,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias kanade="ssh root@45.55.13.11"
-alias kanademux="ssh root@45.55.13.11 -t -- /bin/sh -c 'tmux has-session && exec tmux attach || exec tmux'"
-alias rempv="brew rm mpv && brew install --HEAD --with-bundle --with-bluray-support --with-libdvdread --with-little-cms2 --with-lua --with-bundle mpv"
+alias vim='/usr/local/bin/vim'
+export ANDROID_HOME=/usr/local/opt/android-sdk
+export JAVA_HOME=$(/usr/libexec/java_home)
+export ANT_HOME=/usr/local/opt/ant
+export MAVEN_HOME=/usr/local/opt/maven
+export GRADLE_HOME=/usr/local/opt/gradle
+export ANDROID_NDK_HOME=/usr/local/opt/android-ndk
 
-export ANDROID_HOME=/Users/sjeongus/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/tools
+export PATH=$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/$(ls $ANDROID_HOME/build-tools | sort | tail -1):$PATH
