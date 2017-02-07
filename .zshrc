@@ -1,5 +1,7 @@
+
+
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/sjeong/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -89,9 +91,12 @@ source $ZSH/oh-my-zsh.sh
 alias vim='/usr/local/bin/vim'
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export JAVA_HOME=$(/usr/libexec/java_home)
-export ANT_HOME=/usr/local/opt/ant
+export ANT_HOME=/usr/local/opt/ant/libexec
 export MAVEN_HOME=/usr/local/opt/maven
 export GRADLE_HOME=/usr/local/opt/gradle
 export ANDROID_NDK_HOME=/usr/local/opt/android-ndk
+export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 
 export PATH=$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/$(ls $ANDROID_HOME/build-tools | sort | tail -1):$PATH
+export ANDROID_STANDALONE_TOOLCHAIN=$HOME/Documents/Programming/android-standalone-toolchains/
+export SCALA_HOME=/usr/local/opt/scala/idea
