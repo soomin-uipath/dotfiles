@@ -59,8 +59,6 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/loca
 # export MANPATH="/usr/local/man:$MANPATH"
 export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages
 
-eval "$(docker-machine env default)"
-
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -100,3 +98,5 @@ export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 export PATH=$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/$(ls $ANDROID_HOME/build-tools | sort | tail -1):$PATH
 export ANDROID_STANDALONE_TOOLCHAIN=$HOME/Documents/Programming/android-standalone-toolchains/
 export SCALA_HOME=/usr/local/opt/scala/idea
+eval $(/usr/libexec/path_helper -s)
+fpath=(/usr/local/share/zsh-completions /Users/sjeong/.oh-my-zsh/plugins/git /Users/sjeong/.oh-my-zsh/functions /Users/sjeong/.oh-my-zsh/completions /usr/local/share/zsh/site-functions /usr/share/zsh/site-functions /usr/share/zsh/5.2/functions)
