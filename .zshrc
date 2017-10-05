@@ -1,5 +1,3 @@
-
-
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -51,13 +49,12 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-autosuggestions)
 
 # User configuration
 
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:"
 # export MANPATH="/usr/local/man:$MANPATH"
-export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.7/site-packages
 
 source $ZSH/oh-my-zsh.sh
 
