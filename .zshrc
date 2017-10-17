@@ -96,4 +96,3 @@ export PATH=$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$ANDROID_HOME/tools:$
 export ANDROID_STANDALONE_TOOLCHAIN=$HOME/Documents/Programming/android-standalone-toolchains/
 export SCALA_HOME=/usr/local/opt/scala/idea
 eval $(/usr/libexec/path_helper -s)
-fpath=(/usr/local/share/zsh-completions /Users/sjeong/.oh-my-zsh/plugins/git /Users/sjeong/.oh-my-zsh/functions /Users/sjeong/.oh-my-zsh/completions /usr/local/share/zsh/site-functions /usr/share/zsh/site-functions /usr/share/zsh/5.2/functions)
