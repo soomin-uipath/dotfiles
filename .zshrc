@@ -22,7 +22,8 @@ antibody bundle zsh-users/zsh-autosuggestions
 antibody bundle zsh-users/zsh-completions
 antibody bundle zsh-users/zsh-history-substring-search
 
-antibody bundle akz92/clean
+#antibody bundle akz92/clean
+antibody bundle andrepolischuk/min
 antibody bundle zsh-users/zsh-syntax-highlighting
 
 # You may need to manually set your language environment
