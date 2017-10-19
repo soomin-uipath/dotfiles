@@ -46,3 +46,7 @@ antibody bundle zsh-users/zsh-syntax-highlighting
 alias vim='/usr/local/bin/vim'
 
 eval $(/usr/libexec/path_helper -s)
+fpath=(~/.zsh/completion $fpath)
+autoload -Uz compinit && compinit -i
+
+
