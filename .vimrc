@@ -17,7 +17,7 @@ Plug 'scrooloose/syntastic'
 Plug 'jelera/vim-javascript-syntax', { 'for': 'javascript' }
 Plug 'keith/tmux.vim', { 'for': 'tmux' }
 Plug 'OrangeT/vim-csharp', { 'for': 'cs' }
-Plug 'fatih/vim-go', { 'for': 'go' }
+Plug 'fatih/vim-go', { 'for': 'go', 'do': ':GoInstallBinaries' }
 Plug 'udalov/kotlin-vim', { 'for': 'kotlin' }
 
 " All of your Plugins must be added before the following line

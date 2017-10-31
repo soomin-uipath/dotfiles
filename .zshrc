@@ -14,6 +14,7 @@ export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 export PATH=$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/$(ls $ANDROID_HOME/build-tools | sort | tail -1):$PATH
 export ANDROID_STANDALONE_TOOLCHAIN=$HOME/Documents/Programming/android-standalone-toolchains/
 export SCALA_HOME=/usr/local/opt/scala/idea
+export GOPATH=/Users/sjeong/.go
 
 # Antibody plugins
 source <(antibody init)
