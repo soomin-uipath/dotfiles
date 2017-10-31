@@ -1,5 +1,5 @@
 # User configuration
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/git/bin:"
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:/usr/X11/bin:/usr/local/git/bin:"
 # export MANPATH="/usr/local/man:$MANPATH"
 export CLICOLOR=1;
 
@@ -48,5 +48,3 @@ alias vim='/usr/local/bin/vim'
 eval $(/usr/libexec/path_helper -s)
 fpath=(~/.zsh/completion $fpath)
 autoload -Uz compinit && compinit -i
-
-
