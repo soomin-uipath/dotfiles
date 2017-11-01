@@ -49,3 +49,10 @@ alias vim='/usr/local/bin/vim'
 eval $(/usr/libexec/path_helper -s)
 fpath=(~/.zsh/completion $fpath)
 autoload -Uz compinit && compinit -i
+
+# Add alias for quickly running Kotlin files from commmand line
+function kotlinr() {
+  kotlinc $1 -include-runtime -d out.jar
+  java -jar out.jar
+  rm out.jar
+}

@@ -1,5 +1,5 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
+set nocompatible      " be iMproved, required
+filetype off          " required
 
 " ============= Plugins =============
 call plug#begin('~/.vim/plugged')
