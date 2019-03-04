@@ -3,25 +3,17 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:/usr/X
 # export MANPATH="/usr/local/man:$MANPATH"
 export CLICOLOR=1;
 
-export ANDROID_HOME=/usr/local/opt/android-sdk
-export JAVA_HOME=$(/usr/libexec/java_home)
-export ANT_HOME=/usr/local/opt/ant/libexec
-export MAVEN_HOME=/usr/local/opt/maven
-export GRADLE_HOME=/usr/local/opt/gradle
-export ANDROID_NDK_HOME=/usr/local/opt/android-ndk
-export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
-
-export PATH=$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_HOME/build-tools/$(ls $ANDROID_HOME/build-tools | sort | tail -1):$PATH
-export ANDROID_STANDALONE_TOOLCHAIN=$HOME/Documents/Programming/android-standalone-toolchains/
-export SCALA_HOME=/usr/local/opt/scala/idea
-export GOPATH=/Users/sjeong/.go
-
 # Antibody plugins
 source <(antibody init)
+ZSH="$(antibody home)/https-COLON--SLASH--SLASH-github.com-SLASH-robbyrussell-SLASH-oh-my-zsh"
+antibody bundle robbyrussell/oh-my-zsh
+antibody bundle robbyrussell/oh-my-zsh folder:plugins/common-aliases
+
 antibody bundle mafredri/zsh-async
 antibody bundle zsh-users/zsh-autosuggestions
 antibody bundle zsh-users/zsh-completions
 antibody bundle zsh-users/zsh-history-substring-search
+antibody bundle robbyrussell/oh-my-zsh path:plugins/git
 
 #antibody bundle akz92/clean
 antibody bundle andrepolischuk/min
@@ -44,15 +36,6 @@ antibody bundle zsh-users/zsh-syntax-highlighting
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # Aliases
-alias vim='/usr/local/bin/vim'
 
-eval $(/usr/libexec/path_helper -s)
 fpath=(~/.zsh/completion $fpath)
 autoload -Uz compinit && compinit -i
-
-# Add alias for quickly running Kotlin files from commmand line
-function kotlinr() {
-  kotlinc $1 -include-runtime -d out.jar
-  java -jar out.jar
-  rm out.jar
-}
