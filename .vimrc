@@ -17,6 +17,8 @@ Plug 'bling/vim-airline'
 
 " Utils
 Plug 'tpope/vim-fugitive'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 
 " Syntax
 Plug 'scrooloose/syntastic'
@@ -54,7 +56,7 @@ set undodir=$HOME/.vim_undo_files
 " Mouse mode
 set mouse=a
 set ttymouse=xterm2
-set cursorline
+"set cursorline
 
 " Disable backup
 set noswapfile
